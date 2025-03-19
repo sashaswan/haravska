@@ -1,62 +1,62 @@
 var data = [
 	{
 		type: 'double',
-		image: '/images/nowhere/1.jpg',
-		image2: '/images/nowhere/2.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/1.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/nowhere/2.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/circle/2.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/circle/2.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/nowhere/3.jpg',
-		image2: '/images/nowhere/4.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/3.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/nowhere/4.jpg',
 		title: 'In the Middle of Nowhere',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/nowhere/5.jpg',
-		image2: '/images/nowhere/6.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/5.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/nowhere/6.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/circle/2.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/circle/2.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/nowhere/7.jpg',
-		image2: '/images/nowhere/8.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/7.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/nowhere/8.jpg',
 		title: 'In the Middle of Nowhere',
 		circleLeft: ''
 	},
 	{
 		type: 'center',
-		image: '/images/nowhere/9.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/9.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/circle/2.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/circle/2.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/nowhere/10.jpg',
-		image2: '/images/nowhere/11.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/nowhere/10.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/nowhere/11.jpg',
 		circleLeft: ''
 	}
-	
+
 ];
 var types = ['center', 'double'];
 var templates = {};
 var promises = [];
 for (var i = 0; i < types.length; i++) {
-	var promise = new Promise (function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", '/nowhereType/' + types[i] + '.html', false);
-	    rawFile.onreadystatechange = function () {
-	        if(rawFile.readyState === 4) {
-	            if(rawFile.status === 200 || rawFile.status == 0) {
+		rawFile.open("GET", 'https://sashaswan.github.io/haravska/nowhereType/' + types[i] + '.html', false);
+		rawFile.onreadystatechange = function () {
+			if (rawFile.readyState === 4) {
+				if (rawFile.status === 200 || rawFile.status == 0) {
 					templates[types[i]] = rawFile.responseText;
 					resolve();
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+				}
+			}
+		}
+		rawFile.send(null);
 	});
 	promises.push(promise);
 }
@@ -77,7 +77,7 @@ function buildHtml() {
 			template = template
 				.replace('{{showdesign}}', '')
 				.replace('{{/showdesign}}', '');
-		}		
+		}
 		$('.nowhereloop').append(template);
 	}
 	console.log(templates);

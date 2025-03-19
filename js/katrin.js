@@ -1,64 +1,64 @@
 var data = [
 	{
 		type: 'double',
-		image: '/images/katrin/1.jpg',
-		image2: '/images/katrin/2.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/1.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/2.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/1.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/1.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/3.jpg',
-		image2: '/images/katrin/4.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/3.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/4.jpg',
 		title: 'KATRIN',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/5.jpg',
-		image2: '/images/katrin/6.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/5.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/6.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/1.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/1.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/7.jpg',
-		image2: '/images/katrin/8.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/7.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/8.jpg',
 		title: 'KATRIN',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/9.jpg',
-		image2: '/images/katrin/10.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/9.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/10.jpg',
 		title: 'HARAVSKA',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/11.jpg',
-		image2: '/images/katrin/12.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/11.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/12.jpg',
 		title: 'KATRIN',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/katrin/13.jpg',
-		image2: '/images/katrin/14.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/13.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/14.jpg',
 		title: 'HARAVSKA',
 		circleLeft: ''
 	},
-		{
+	{
 		type: 'double',
-		image: '/images/katrin/15.jpg',
-		image2: '/images/katrin/16.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/15.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/16.jpg',
 		title: 'KATRIN',
 		circleLeft: ''
 	},
-		{
+	{
 		type: 'double',
-		image: '/images/katrin/17.jpg',
-		image2: '/images/katrin/18.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/katrin/17.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/katrin/18.jpg',
 		circleLeft: ''
 	}
 ];
@@ -66,18 +66,18 @@ var types = ['double'];
 var templates = {};
 var promises = [];
 for (var i = 0; i < types.length; i++) {
-	var promise = new Promise (function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", '/katrinType/' + types[i] + '.html', false);
-	    rawFile.onreadystatechange = function () {
-	        if(rawFile.readyState === 4) {
-	            if(rawFile.status === 200 || rawFile.status == 0) {
+		rawFile.open("GET", 'https://sashaswan.github.io/haravska/katrinType/' + types[i] + '.html', false);
+		rawFile.onreadystatechange = function () {
+			if (rawFile.readyState === 4) {
+				if (rawFile.status === 200 || rawFile.status == 0) {
 					templates[types[i]] = rawFile.responseText;
 					resolve();
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+				}
+			}
+		}
+		rawFile.send(null);
 	});
 	promises.push(promise);
 }
@@ -98,7 +98,7 @@ function buildHtml() {
 			template = template
 				.replace('{{showdesign}}', '')
 				.replace('{{/showdesign}}', '');
-		}	
+		}
 		$('.katrinmodel').append(template);
 	}
 	console.log(templates);

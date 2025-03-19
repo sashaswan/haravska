@@ -1,29 +1,29 @@
 var data = [
 	{
 		type: 'double',
-		image: '/images/valery/1.jpg',
-		image2: '/images/valery/2.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/valery/1.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/valery/2.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/6.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/6.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/valery/3.jpg',
-		image2: '/images/valery/4.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/valery/3.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/valery/4.jpg',
 		title: 'VALERY',
 		circleLeft: ''
 	},
-		{
+	{
 		type: 'double',
-		image: '/images/valery/5.jpg',
-		image2: '/images/valery/6.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/valery/5.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/valery/6.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/6.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/6.svg'
 	},
-		{
+	{
 		type: 'double',
-		image: '/images/valery/7.jpg',
-		image2: '/images/valery/8.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/valery/7.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/valery/8.jpg',
 		circleLeft: ''
 	}
 
@@ -32,18 +32,18 @@ var types = ['double'];
 var templates = {};
 var promises = [];
 for (var i = 0; i < types.length; i++) {
-	var promise = new Promise (function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", '/valeryType/' + types[i] + '.html', false);
-	    rawFile.onreadystatechange = function () {
-	        if(rawFile.readyState === 4) {
-	            if(rawFile.status === 200 || rawFile.status == 0) {
+		rawFile.open("GET", 'https://sashaswan.github.io/haravska/valeryType/' + types[i] + '.html', false);
+		rawFile.onreadystatechange = function () {
+			if (rawFile.readyState === 4) {
+				if (rawFile.status === 200 || rawFile.status == 0) {
 					templates[types[i]] = rawFile.responseText;
 					resolve();
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+				}
+			}
+		}
+		rawFile.send(null);
 	});
 	promises.push(promise);
 }
@@ -64,7 +64,7 @@ function buildHtml() {
 			template = template
 				.replace('{{showdesign}}', '')
 				.replace('{{/showdesign}}', '');
-		}	
+		}
 		$('.valerymodel').append(template);
 	}
 	console.log(templates);

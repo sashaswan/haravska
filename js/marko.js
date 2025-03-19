@@ -1,48 +1,48 @@
 var data = [
 	{
 		type: 'double',
-		image: '/images/marko/1.jpg',
-		image2: '/images/marko/2.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/1.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/marko/2.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/marko/marko.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/marko/marko.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/marko/3.jpg',
-		image2: '/images/marko/4.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/3.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/marko/4.jpg',
 		title: 'MARKO',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/marko/5.jpg',
-		image2: '/images/marko/6.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/5.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/marko/6.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/marko/marko.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/marko/marko.svg'
 	},
 	{
 		type: 'center',
-		image: '/images/marko/7.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/7.jpg',
 		circleLeft: '',
 		title: 'MARKO'
 	},
 	{
 		type: 'double',
-		image: '/images/marko/8.jpg',
-		image2: '/images/marko/9.jpg',
-		circleLeft: '/images/marko/marko.svg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/8.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/marko/9.jpg',
+		circleLeft: 'https://sashaswan.github.io/haravska/images/marko/marko.svg',
 		title: 'HARAVSKA'
 	},
 	{
 		type: 'double',
-		image: '/images/marko/10.jpg',
-		image2: '/images/marko/11.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/10.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/marko/11.jpg',
 		circleLeft: '',
 		title: 'MARKO'
 	},
 	{
 		type: 'center',
-		image: '/images/marko/12.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/marko/12.jpg',
 		circleLeft: '',
 	}
 ];
@@ -50,18 +50,18 @@ var types = ['center', 'double'];
 var templates = {};
 var promises = [];
 for (var i = 0; i < types.length; i++) {
-	var promise = new Promise (function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", '/markoType/' + types[i] + '.html', false);
-	    rawFile.onreadystatechange = function () {
-	        if(rawFile.readyState === 4) {
-	            if(rawFile.status === 200 || rawFile.status == 0) {
+		rawFile.open("GET", 'https://sashaswan.github.io/haravska/markoType/' + types[i] + '.html', false);
+		rawFile.onreadystatechange = function () {
+			if (rawFile.readyState === 4) {
+				if (rawFile.status === 200 || rawFile.status == 0) {
 					templates[types[i]] = rawFile.responseText;
 					resolve();
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+				}
+			}
+		}
+		rawFile.send(null);
 	});
 	promises.push(promise);
 }
@@ -73,8 +73,8 @@ function buildHtml() {
 			.replace('{{image}}', data[i].image)
 			.replace('{{image2}}', data[i].image2)
 			.replace('{{circleLeft}}', data[i].circleLeft)
-			.replace('{{title}}', data[i].title);	
-			if (data[i].title === undefined) {
+			.replace('{{title}}', data[i].title);
+		if (data[i].title === undefined) {
 			var start = template.indexOf('{{showdesign}}');
 			var end = template.indexOf('{{/showdesign}}') + 14;
 			template = template.substr(0, start) + template.substr(end + 1, template.length - end);

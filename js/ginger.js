@@ -1,29 +1,29 @@
 var data = [
 	{
 		type: 'double',
-		image: '/images/ginger/1.jpg',
-		image2: '/images/ginger/2.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/ginger/1.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/ginger/2.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/3.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/3.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/ginger/3.jpg',
-		image2: '/images/ginger/4.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/ginger/3.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/ginger/4.jpg',
 		title: 'GINGER',
 		circleLeft: ''
 	},
 	{
 		type: 'double',
-		image: '/images/ginger/5.jpg',
-		image2: '/images/ginger/6.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/ginger/5.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/ginger/6.jpg',
 		title: 'HARAVSKA',
-		circleLeft: '/images/modeltestcircle/3.svg'
+		circleLeft: 'https://sashaswan.github.io/haravska/images/modeltestcircle/3.svg'
 	},
 	{
 		type: 'double',
-		image: '/images/ginger/7.jpg',
-		image2: '/images/ginger/8.jpg',
+		image: 'https://sashaswan.github.io/haravska/images/ginger/7.jpg',
+		image2: 'https://sashaswan.github.io/haravska/images/ginger/8.jpg',
 		circleLeft: ''
 	}
 ];
@@ -31,18 +31,18 @@ var types = ['double'];
 var templates = {};
 var promises = [];
 for (var i = 0; i < types.length; i++) {
-	var promise = new Promise (function (resolve, reject) {
+	var promise = new Promise(function (resolve, reject) {
 		var rawFile = new XMLHttpRequest();
-	    rawFile.open("GET", '/gingerType/' + types[i] + '.html', false);
-	    rawFile.onreadystatechange = function () {
-	        if(rawFile.readyState === 4) {
-	            if(rawFile.status === 200 || rawFile.status == 0) {
+		rawFile.open("GET", 'https://sashaswan.github.io/haravska/gingerType/' + types[i] + '.html', false);
+		rawFile.onreadystatechange = function () {
+			if (rawFile.readyState === 4) {
+				if (rawFile.status === 200 || rawFile.status == 0) {
 					templates[types[i]] = rawFile.responseText;
 					resolve();
-	            }
-	        }
-	    }
-	    rawFile.send(null);
+				}
+			}
+		}
+		rawFile.send(null);
 	});
 	promises.push(promise);
 }
@@ -63,7 +63,7 @@ function buildHtml() {
 			template = template
 				.replace('{{showdesign}}', '')
 				.replace('{{/showdesign}}', '');
-		}	
+		}
 		$('.gingermodel').append(template);
 	}
 	console.log(templates);
