@@ -10,7 +10,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/katrin/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/katrin/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/katrin/3.jpg',
-		link: '/katrin',
+		link: '../katrin',
 		mua: '',
 		styleMark: ''
 	},
@@ -25,7 +25,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/mary/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/mary/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/mary/3.jpg',
-		link: '/mary',
+		link: '../mary',
 		mua: '',
 		styleMark: ''
 	},
@@ -40,7 +40,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/ginger/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/ginger/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/ginger/3.jpg',
-		link: '/ginger',
+		link: '../ginger',
 		mua: 'Mua:',
 		styleMark: ''
 	},
@@ -55,7 +55,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/vicky/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/vicky/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/vicky/3.jpg',
-		link: '/vicky',
+		link: '../vicky',
 		mua: 'Mua:',
 		styleMark: 'Style:'
 	},
@@ -71,7 +71,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/diana/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/diana/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/diana/3.jpg',
-		link: '/diana',
+		link: '../diana',
 		mua: 'Mua:',
 		styleMark: 'Style:'
 	},
@@ -86,7 +86,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/modeltest/valery/1.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/modeltest/valery/2.jpg',
 		slider3: 'https://sashaswan.github.io/haravska/images/modeltest/valery/3.jpg',
-		link: '/valery',
+		link: '../valery',
 		mua: '',
 		styleMark: ''
 	}

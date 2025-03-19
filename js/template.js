@@ -5,8 +5,8 @@ var data = [
 		title: 'Fashion',
 		description: 'Lookbook / Campaign / Editorial / Promo',
 		boxtitle: 'Fashion',
-		link: '/fashion',
-		buttonLink: '/fashion'
+		link: '../fashion',
+		buttonlink: '../fashion'
 	},
 	{
 		type: 'right',
@@ -14,8 +14,8 @@ var data = [
 		title: 'Beauty',
 		description: 'Make-up / Hair / Accessories',
 		boxtitle: 'Beauty',
-		link: '/fashion',
-		buttonLink: '/fashion'
+		link: '../fashion',
+		buttonlink: '../fashion'
 	},
 	{
 		type: 'left',
@@ -23,8 +23,8 @@ var data = [
 		title: 'Model Test',
 		description: '',
 		boxtitle: 'Model Test',
-		link: '/modeltest',
-		buttonLink: '/modeltest'
+		link: '../modeltest',
+		buttonlink: '../modeltest'
 	},
 	{
 		type: 'right',
@@ -32,8 +32,8 @@ var data = [
 		title: 'Portrait',
 		description: 'Creative / Promo',
 		boxtitle: 'Portrait',
-		link: '/portrait',
-		buttonLink: '/portrait'
+		link: '../portrait',
+		buttonlink: '../portrait'
 	},
 	{
 		type: 'left',
@@ -41,8 +41,8 @@ var data = [
 		title: 'Video',
 		description: 'Fashion Film / Campaign / Lookbook / Backstage / Reportage/ Personal',
 		boxtitle: 'Video',
-		link: '/portrait',
-		buttonLink: '/portrait'
+		link: '../portrait',
+		buttonlink: '../portrait'
 	}
 ];
 

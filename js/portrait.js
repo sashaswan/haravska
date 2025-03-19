@@ -3,13 +3,13 @@ var data = [
 		type: 'left',
 		image: 'https://sashaswan.github.io/haravska/images/portrait/2.jpg',
 		title: 'YARYNA',
-		link: '/yaryna'
+		link: '../yaryna'
 	},
 	{
 		type: 'right',
 		image: 'https://sashaswan.github.io/haravska/images/portrait/1.png',
 		title: 'MARKO',
-		link: '/marko'
+		link: '../marko'
 	}
 ];
 var types = ['left', 'right'];

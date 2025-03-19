@@ -10,7 +10,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/green/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/green/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/green/3.jpg',
-		link: '/greenline',
+		link: '../greenline',
 		mua: 'Mua:',
 		styleMark: 'Style:'
 	},
@@ -26,7 +26,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/bloom/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/bloom/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/bloom/3.jpg',
-		link: '/inbloom',
+		link: '../inbloom',
 		mua: 'Mua:',
 		styleMark: 'Style:'
 	},
@@ -41,7 +41,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/inthe/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/inthe/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/inthe/3.jpg',
-		link: '/nowhere',
+		link: '../nowhere',
 		mua: '',
 		styleMark: 'Style:'
 	},
@@ -56,7 +56,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/rush/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/rush/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/rush/3.jpg',
-		link: '/rush',
+		link: '../rush',
 		mua: '',
 		styleMark: ''
 	},
@@ -72,7 +72,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/lust/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/lust/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/lust/3.jpg',
-		link: '/wanderlust',
+		link: '../wanderlust',
 		mua: '',
 		styleMark: ''
 	},
@@ -87,7 +87,7 @@ var data = [
 		slider: 'https://sashaswan.github.io/haravska/images/fashion/yellow/1.jpg',
 		slider1: 'https://sashaswan.github.io/haravska/images/fashion/yellow/2.jpg',
 		slider2: 'https://sashaswan.github.io/haravska/images/fashion/yellow/3.jpg',
-		link: '/yellowglow',
+		link: '../yellowglow',
 		mua: '',
 		styleMark: 'Style:'
 	}
