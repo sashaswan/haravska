@@ -1,0 +1,116 @@
+p {
+	margin-bottom: 0 !important;
+}
+.fashionpage{
+	margin-top: 166px;
+	padding-bottom: 166px;	
+}
+.fashionleftpadding {
+	max-width: 546px;
+	margin: auto;
+}
+.fashionpaddingtop {
+/* 	padding-top: 318px; */
+	position: absolute;
+	top: 50%;
+	height: 158px;
+	margin-top: -50px;
+	right: 0;
+}
+.slidermargin {
+	margin-top: 121px;
+}
+.mobilepaddingf {
+	margin-top: 121px;
+	position: relative;
+}
+.colormodel {
+	color: #ca9f63;
+	font-weight: 500;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.fahsionstylel {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 0.86;
+	text-align: left;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+.modeltitle {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	padding-top: 38px;
+	line-height: 25px;
+	text-align: left;
+	color: rgb(51, 51, 51);
+	padding-bottom: 7px;
+}
+.modeltype {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: left;
+	color: rgb(51, 51, 51);
+	padding-bottom: 7px;
+}
+
+.fashionrightpadd {
+/* 	padding-top: 318px; */
+	position: absolute;
+	top: 50%;
+	height: 158px;
+	margin-top: -100px;
+}
+.fashiontext {
+	max-width: 350px;
+	margin: auto;
+}
+.fashiontexttwo{
+	max-width: 250px;
+	margin: auto;
+}
+.fashionpaddinga {
+	position: absolute;
+	top: 50%;
+	height: 158px;
+	margin-top: -100px;
+}
+.lefttextf {
+	max-width: 600px;
+	margin: auto;
+}
+.rightfashiontop {
+	margin: auto;
+	max-width: 642px;
+}
+.verticalmiddle {
+	position: relative;
+}
+.verticalmiddle {
+	margin-top: 121px;
+}
+.view_allb {
+	padding-top: 60px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.14;
+	color: rgb(29, 29, 27);
+	width: 61px;
+	border-bottom: solid 1px rgb(0, 0, 0);
+}
+.view_allb:hover {
+	border-bottom: none;
+}
+.view_all {
+	padding-top: 25px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 22px;
+	line-height: 1.14;
+	color: rgb(29, 29, 27);
+	width: 74px;
+}
+.view_all:hover {
+	border-bottom: solid 1px rgb(0, 0, 0);
+}

@@ -1,0 +1,22 @@
+.bloomloop {
+	margin-top: 166px;
+	margin-bottom: 166px;
+}
+.bloom_center {
+	text-align: center;
+}
+.title_bloom {
+	margin-top: 170px;
+	margin-bottom: 170px;
+}
+.style_bloom {
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+}
+.circle {
+	padding-left: 18px;
+	padding-right: 18px;
+}

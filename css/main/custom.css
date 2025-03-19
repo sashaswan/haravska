@@ -1,0 +1,285 @@
+@media only screen and (max-width : 1440px) {
+	#more {
+		margin-top: 80px;
+	}
+	#logo {
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width : 1166px) {
+	#rightmenu {
+		margin-right: 50px;
+	}
+	.videomarginmenu {
+		margin-right: 0px;
+	}
+}
+@media only screen and (max-width : 1024px) {
+/*
+	.model_text {
+    	padding-top: 240px;
+    }
+*/
+	.mobile-only {
+	    display: block;
+	    text-align: center;
+	    margin-bottom: 50px;
+	    background: url('/images/homepage/ipad.jpg') no-repeat center;
+	    height: 100vh;
+	    position: relative;
+    }
+}    
+@media only screen and (max-width : 1048px) {
+	.menu {
+		display: none;
+	}
+	#home {
+		margin: 0 auto;
+	}
+	.mobhide{
+		display: block;
+	}
+	.mobilemargin, .model_margin, .portrait_margin{
+		padding: 30px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.bloom_center, .green_row, .now_center, .rush_center, .wanderlust, .yellow_center, .mary_center, .katrin_center, .ginger_center, .vicky_center, .diana_center, 
+	.yaryna_center, .marko_center {
+		padding: 30px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.mobilepaddingf, .verticalmiddle {
+		padding: 30px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.pmobile {
+		display: block;
+		height: 130px;
+	}
+/*
+		.heightmobile {
+		height: 100px;
+	}
+*/
+	.heightmobiletime {
+    height: 100px;
+	}
+	.mobilepaddingf {
+		margin-bottom: 121px;
+	}
+	.fashionpage {
+    padding-bottom: 50px;
+	}
+	.fahsionstylel {
+	font-size: 22px;
+	line-height: 31px;
+	}
+	.fashionpage {
+		margin-top: 0px;
+	}
+}
+@media only screen and (max-width : 960px) {
+	.mainf {
+		height: auto;
+		padding-bottom: 10px;
+	}
+	.tabf {
+		display: block;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.tabf:hover {
+		border-bottom: none;
+	}
+	.copyright {
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width : 900px) {
+.find {
+	margin-top: 20px;
+}
+/*
+	.model_text {
+		padding-top: 170px;
+	}
+*/
+    .view_allb , .view_all {
+		padding-top: 30px;
+	}
+	.model_link {
+		padding-top: 30px;
+	}
+}
+@media only screen and (max-width : 768px) {
+	.header_logo {
+		height: 100vh;
+	}
+	#logo {
+		font-size: 30px;
+	}
+	#more {
+		margin-top: 95px;
+	}
+	#logo {
+		margin-bottom: 31px;
+	}
+	.mobilemargin {
+		margin-bottom: 70px;
+	}
+	.fashionlbottom {
+		margin-bottom: 50px;
+	}
+	.modeltitle, .modeltype, .model_name, .model_agency, .model_mua, .model_style{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width : 736px) {
+/*
+	.model_text {
+    	padding-top: 120px;
+	}
+*/
+	.modelloop {
+		margin-top: 0px;
+	}
+	.arrow {
+		bottom: 50px;
+	}
+}
+@media only screen and (max-width : 320px) {
+	
+}
+@media only screen and (max-width : 40em) { 
+	.firstp {
+	padding-top: 0;
+	}
+	.secondp, .secondvertical {
+	margin-top: 50px;
+	position: relative;
+	}
+	#flex {
+	display: flex;
+	flex-flow: column;
+	}
+	#a {
+	order: 2;	
+	}
+	#b {
+	order: 1;	
+	}
+	.find {
+		margin-top: 25px;
+	}
+	.made {
+		font-size: 13px;
+	}
+	.place, .placeright {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 50%;
+    }
+    .heightmobiletime {
+	    height: 100px;
+    }
+    	.heightmobile {
+		height: 0px;
+	}
+	.mobilepaddingf {
+	margin-top: 50px;
+    margin-bottom: 0px;
+	}
+	#centermenu {
+		padding-top: 45px;
+	}
+	.copyright {
+		max-width: 250px;
+		margin: auto;
+	}
+	.modelloop {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.model_margin, .greenloop, .bloomloop, .nowhereloop, .rushloop, .wanderlust, .yellowglow, .marymodel, .katrinmodel, .gingermodel, .vickymodel, .dianamodel, 
+	.yarynaloop, .markoloop {
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+	.model_text {
+		margin: 0;
+		padding-top: 50px;
+	}
+	.fashiontext {
+		margin: 0;
+	}
+	.fashionpaddinga {
+		position: relative;
+		top:0px;
+		margin-top: 0px;
+	}
+	.fashionpaddingtop, .fashionrightpadd{
+		margin-top: 50px;
+		position: relative;
+		height: auto;
+	}
+	.vertical, .verticalright {
+		position: relative;
+		margin-top: 0px;
+	}
+	.verticalmiddle {
+		margin-top: -100px;
+	}
+	.fashionpage {
+		margin-bottom: 100px;
+	}
+	.arrow {
+		bottom: 100px;
+	}
+	.portraitpage {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.portrait_text {
+		margin: 0;
+	}
+	.portrait_image {
+		margin-bottom: 75px;
+	}
+	.portrait_margin {
+		margin-bottom: 0px;
+	}
+	.titles, .title_bloom, .title_now, .title_rush, .title_wander, .title_yellow, .title_mary, .title_katrin, .title_ginger, .title_vicky, .title_diana, 
+	.title_yaryna, .title_marko{
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.bloomtop {
+		margin-top: 50px;
+	}
+	.verticalright, .vertical {
+		height: 260px;
+	}
+	.templateserv {
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+	.fashiontexttwo {
+		margin: 0;
+	}
+	.view_allb , .view_all {
+		padding-top: 30px;
+	}
+/*
+	.fashionpaddingtop, .fashionleftpadding, .fashionrightpadd{
+		padding-top: 50px;
+	}
+	.mobilepaddingf {
+		margin-bottom: 0px;
+	}
+*/
+}

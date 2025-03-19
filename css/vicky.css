@@ -1,0 +1,21 @@
+.vickymodel {
+	margin-top: 166px;
+	margin-bottom: 166px;
+}
+.vicky_center {
+	text-align: center;
+}
+.title_vicky {
+	margin-top: 170px;
+	margin-bottom: 170px;
+}
+.style_vicky {
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+}
+.circle {
+	padding-right: 18px;
+}

@@ -1,0 +1,21 @@
+.katrinmodel {
+	margin-top: 166px;
+	margin-bottom: 166px;
+}
+.katrin_center {
+	text-align: center;
+}
+.title_katrin {
+	margin-top: 170px;
+	margin-bottom: 170px;
+}
+.style_katrin {
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+}
+.circle {
+	padding-right: 18px;
+}

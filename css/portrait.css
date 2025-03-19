@@ -1,0 +1,46 @@
+.portraitpage {
+	margin-top: 166px;
+	margin-bottom: 166px;
+}
+.portrait_margin {
+	position: relative;
+	margin-bottom: 121px;
+}
+.vertical {
+	position: absolute;
+	top: 50%;
+	height: 158px;
+	margin-top: -50px;
+}
+.verticalright {
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	height: 158px;
+	margin-top: -50px;
+}
+.portrait_title {
+	font-family: 'IBM Plex Sans', sans-serif;	
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 0.86;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+}
+.portrait_text {
+	max-width: 115px;
+	margin: auto;
+}
+.viewportrait {
+	padding-top: 113px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 18px;
+	line-height: 1.14;
+	color: rgb(29, 29, 27);
+	width: 63px;
+	border-bottom: solid 2px rgb(29, 29, 27);
+}
+.viewportrait:hover {
+	border-bottom: none;
+}
